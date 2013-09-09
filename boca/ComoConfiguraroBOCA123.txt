@@ -1,0 +1,53 @@
+Site: http://jbravo.icmc.usp.br/boca/index.php
+Login: system
+Senha: mesma de admin
+Clicar em contest
+contest number [new]... espera vir o nro!
+[configura tempos], [send]
+
+[activate]
+
+
+login: admin
+senha: mesma de system
+
+
+users -> escolhe o arquivo e aperta em import
+languages
+ (numero, nome, script.run, compare.sh)
+
+ answers -> manter ordem para permitir autojudge
+ answernumber=1
+ answername=NO - Compile error
+ answeryes=f
+ answernumber=2
+ answername=NO - Runtime error
+ answeryes=f
+ answernumber=3
+ answername=NO - Time limit exceeded
+ answeryes=f
+ answernumber=4
+ answername=YES
+ answeryes=t
+ answernumber=5
+ answername=NO - Presentation error
+ answeryes=f
+ answernumber=6
+ answername=NO - Wrong answer
+ answeryes=f
+ answernumber=7
+ answername=NO - Contact staff
+ answeryes=f
+ answernumber=8
+ answername=NO - Problem/File name mismatch
+ answeryes=f 
+
+site
+ configurar Horario, data e tempos iguais ao do Contest
+ aqui tb configura Autojudge
+Send
+
+Colocar os problemas
+
+Ligar o script que gera a saida dos alunos usando os códigos que eles submeteram:
+ssh -p 26 judge@jbravo.icmc.usp.br -> senha do boca
