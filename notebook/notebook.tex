@@ -7,7 +7,7 @@
 \usepackage{multicol}
 \usepackage{amsmath}
 \usepackage{amssymb}
-\usepackage{mathptmx}
+%\usepackage{mathptmx}
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{listings}
@@ -51,7 +51,7 @@
  \lstloadlanguages{
          %[Visual]Basic
          %Pascal
-         C
+        C
          %C++
          %XML
          %HTML
@@ -66,13 +66,51 @@
 % This concludes the preamble
 
 \begin{document}
+\begin{titlepage}
+\begin{center}
+\Huge{\textsf{Universidade de São Paulo}}\\
+\Large{\textsf{Instituto de Ciências Matemáticas e Computação}}
+\end{center}
+\end{titlepage}
 
-\lstinputlisting[label=main,caption=main]{main.c}
+\clearpage
+\tableofcontents
+\clearpage
 
-\section(Geometria)
 
-\section(Grafos)
+\chapter{Geometria}
+\section{Intersecções}
+\subsection{Line $\times$ Line}
+Apenas geomtria 2D, coisas q eu vou esquecer provavelmente ou ter q recalcular..\\
+\begin{itemize}
+\item{lei dos cosenos: $a^2 = b^2 + c^2 -2*b*c*cos(a)$}
+\item{lei dos senos: $\frac{sin(a)}{a} = \frac{sin(b)}{b} = \frac{sin(c)}{c}$}
+\item{cross: $|a*b| = |a|.|b|.sin(t)$}
+\item{dot: $a.b = |a|.|b|.cos(t)$}
+\end{itemize}
 
-\section(Teoria dos Números)
+%\lstinputlisting[label=lineinter,caption=linhas na forma ax + by + c = 0]{codes/geometry/lineinter.c}
+%\lstinputlisting[label=lineinter2,caption=na forma = s*u+v; u = (p2-p1)/norm; v = p1]{codes/geometry/lineinter2.c}
+
+\subsection{Circle $\times$ Circle}
+%\lstinputlisting[label=circlecircle,caption=Intersecao de circulos, usando os triangulos que formam ]{codes/geometry/circlelinecirlce.c}
+\subsection{Circle $\times$ Circle : Area}
+
+%\lstinputlisting[label=circlearea,caption=area intersecao de circulos, usando os triangulos que formam entre eles]{codes/geometry/circlearea.c}
+
+\subsection{Circle $\times$ Line}
+ Dado dois pontos da linha calcula a intersecao com circulo centrado em 0,0
+   caso precise deslocar o centro do circulo pra 0,0.. 
+%\lstinputlisting[label=circleline,caption=asd]{codes/geometry/circleline.c}
+\subsection{Circle Triple}
+ Dado dois circulos e o raio de um terceiro, acha a posicao que colide com os outros 2, 
+   ideia de desenhar os circulos com raio r1+r e r2+r e achar a intersecao e la fica o circ! 
+%\lstinputlisting[label=circletriple,caption=asd]{codes/geometry/circletriple.c}
+\section{Distância Ponto Segmento}
+%\lstinputlisting[label=pointsegment,caption=asd]{codes/geometry/pointsegment.c}
+\section{Convex Hull}
+\chapter{Grafos}
+
+\chapter{Teoria dos Números}
 
 \end{document}
