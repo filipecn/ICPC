@@ -1,0 +1,94 @@
+\documentclass{report}
+
+\usepackage{geometry}
+\geometry{a4paper,text={17cm,22.9cm,}}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathptmx}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{color}
+%\usepackage{here}
+
+\newcommand \us {\underline \ }
+\newcommand \tb {\hspace{-1.5em}}
+\newcommand \degree {\hspace{-0.1em}\,^{\circ}}
+
+
+\usepackage{listings}
+\usepackage{courier}
+\lstset{
+	basicstyle=\small\ttfamily,
+	numberstyle=\tiny,          
+         stepnumber=1,               
+         numbersep=5pt,            
+         numbers=left,
+         numberstyle=\small\ttfamily,
+         tabsize=4,                  
+         extendedchars=true, 
+		inputencoding=latin1,
+         breaklines=true, 
+         keywordstyle=\color{red},
+                frame=b,         
+ %        keywordstyle=[1]\textbf,    %
+ %        keywordstyle=[2]\textbf,    %
+ %        keywordstyle=[3]\textbf,    %
+ %        keywordstyle=[4]\textbf,   \sqrt{\sqrt{}} %
+         stringstyle=\color{white}\ttfamily,
+         showspaces=false,
+         showtabs=false,             
+         xleftmargin=17pt,
+         framexleftmargin=17pt,
+         framexrightmargin=5pt,
+         framexbottommargin=4pt,
+         showstringspaces=true         
+ }
+
+ \lstloadlanguages{
+         %[Visual]Basic
+         %Pascal
+         C
+         %C++
+         %XML
+         %HTML
+         %Java
+ }
+
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox[cmyk]{0.43, 0.35, 0.35,0.01}{\parbox{\textwidth}{\hspace{15pt}#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white, singlelinecheck=false, margin=0pt, font={bf,footnotesize}}
+
+% This concludes the preamble
+
+
+
+
+% This concludes the preamble
+
+\begin{document}
+
+\lstinputlisting[label=linesinter,caption=linesinter]{linesinter.c}
+\lstinputlisting[label=linesinter,caption=linesinter]{linesinter.c}
+\lstinputlisting[label=circlearea,caption=circlearea]{circlearea.c}
+\lstinputlisting[label=circletriple,caption=circletriple]{circletriple.c}
+\lstinputlisting[label=circleline,caption=circleline]{circleline.c}
+\lstinputlisting[label=circlecircle,caption=circlecircle]{circlecircle.c}
+\lstinputlisting[label=pointsegment,caption=pointsegment]{pointsegment.c}
+\lstinputlisting[label=potencias,caption=potencias]{potencias.c}
+\lstinputlisting[label=solve,caption=solve]{solve.c}
+\lstinputlisting[label=main,caption=main]{main.c}
+\lstinputlisting[label=dfs,caption=dfs]{dfs.c}
+\lstinputlisting[label=main,caption=main]{main.c}
+\lstinputlisting[label=dinic,caption=dinic]{dinic.c}
+\lstinputlisting[label=main,caption=main]{main.c}
+\lstinputlisting[label=dijkstra,caption=dijkstra]{dijkstra.c}
+\lstinputlisting[label=main,caption=main]{main.c}
+
+
+
+\end{document}
